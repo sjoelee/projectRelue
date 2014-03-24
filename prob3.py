@@ -13,6 +13,8 @@ If so, see if it's a divisor of the number
 def findNextPrime(currVal):
     while (True):
         currVal += 1
+        if (currVal & 1 == 0):
+            continue; # skip even values
         if (isPrime(currVal)):
             break
     return currVal
