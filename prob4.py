@@ -24,6 +24,8 @@ def findLargePalindrome():
     for val1 in range(999, 900, -1):
         for val2 in range(999, 900, -1):
             prod = val1 * val2
+
+            # Convert to string and see if it's a palindrome
             prod_str = str(prod)
             len_range = prod_str.__len__()/2
             prod_str_len = prod_str.__len__()
